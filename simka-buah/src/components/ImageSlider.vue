@@ -2,16 +2,16 @@
   <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto overflow-hidden rounded-xl shadow-lg">
     <!-- Gambar slider -->
     <div class="relative h-64 sm:h-72 md:h-96 w-full">
-      <div 
-        v-for="(image, index) in images" 
+      <div
+        v-for="(image, index) in images"
         :key="index"
         :class="[
           'absolute inset-0 flex items-center justify-center transition-opacity duration-1000',
           index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
         ]"
       >
-        <img 
-          :src="image.src" 
+        <img
+          :src="image.src"
           :alt="image.alt"
           class="w-full h-full object-cover"
           loading="lazy"
@@ -29,21 +29,21 @@ export default {
   setup() {
     // Daftar gambar untuk slider
     const images = [
-      { 
-        src: '/images/Photo 1_Up.png', 
-        alt: 'Buah segar Medan berkualitas' 
+      {
+        src: '/images/Photo 1_Up.png',
+        alt: 'Buah segar Medan berkualitas'
       },
-      { 
-        src: '/images/Photo 2_UP.png', 
-        alt: 'Buah musiman Medan segar' 
+      {
+        src: '/images/Photo 2_UP.png',
+        alt: 'Buah musiman Medan segar'
       },
-      { 
-        src: '/images/Photo 3_UP.png', 
-        alt: 'Buah organik Medan' 
+      {
+        src: '/images/Photo 3_UP.png',
+        alt: 'Buah organik Medan'
       },
-      { 
-        src: '/images/Photo 4_UP.jpg', 
-        alt: 'Paket buah campur Medan' 
+      {
+        src: '/images/Photo 4_UP.jpg',
+        alt: 'Paket buah campur Medan'
       }
     ]
 

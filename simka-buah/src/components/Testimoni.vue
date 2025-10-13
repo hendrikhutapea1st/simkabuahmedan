@@ -5,7 +5,7 @@
         <h2 id="testimoni-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimoni Pelanggan</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">Apa kata pelanggan kami tentang kualitas buah dan layanan SIMKA Buah Medan</p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="Kumpulan testimoni pelanggan">
         <div class="bg-green-50 p-6 rounded-xl shadow-md" role="listitem" aria-labelledby="testimonial-1">
           <div class="flex items-center mb-4">
@@ -36,7 +36,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md" role="listitem" aria-labelledby="testimonial-2">
           <div class="flex items-center mb-4">
             <div class="text-yellow-400 flex" aria-label="5 dari 5 bintang">
@@ -66,7 +66,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md" role="listitem" aria-labelledby="testimonial-3">
           <div class="flex items-center mb-4">
             <div class="text-yellow-400 flex" aria-label="5 dari 5 bintang">

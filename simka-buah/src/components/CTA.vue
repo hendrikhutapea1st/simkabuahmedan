@@ -3,9 +3,9 @@
     <div class="container mx-auto px-4 text-center">
       <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-6">Siap Menikmati Buah Segar Medan Terbaik?</h2>
       <p class="text-xl mb-8 max-w-2xl mx-auto">Dapatkan informasi terupdate, tips & trick, dan promo menarik dari SIMKA Buah Medan melalui akun media sosial kami dibawah ini</p>
-      
+
       <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8" role="group" aria-label="Tindakan pemesanan">
-        <a 
+        <a
           href="https://whatsapp.com/channel/0029VbBW7zD2UPB9UNgfYH3E"
           target="_blank"
           rel="noopener noreferrer"
@@ -14,9 +14,9 @@
           Saluran Resmi SIMKA Buah Medan
         </a>
       </div>
-      
+
       <div class="flex justify-center gap-6 mb-12">
-        <a 
+        <a
           href="https://www.instagram.com/simka_buah_medan?igsh=MTkybjlyanVvdmEzMw=="
           target="_blank"
           rel="noopener noreferrer"
@@ -28,8 +28,8 @@
           </svg>
           Instagram
         </a>
-        
-        <a 
+
+        <a
           href="https://www.tiktok.com/@simka_buah_medan?_t=ZS-90SEdaONXpi&_r=1"
           target="_blank"
           rel="noopener noreferrer"
@@ -42,7 +42,7 @@
           TikTok
         </a>
       </div>
-      
+
       <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto" role="list" aria-label="Keunggulan layanan">
         <div class="flex items-center justify-center" role="listitem" aria-labelledby="benefit-1">
           <div class="mr-4 text-3xl" aria-hidden="true">🚚</div>
@@ -51,7 +51,7 @@
             <p class="text-green-100">Diantar dalam 1-2 jam</p>
           </div>
         </div>
-        
+
         <div class="flex items-center justify-center" role="listitem" aria-labelledby="benefit-2">
           <div class="mr-4 text-3xl" aria-hidden="true">✅</div>
           <div>
@@ -59,7 +59,7 @@
             <p class="text-green-100">Langsung dari perkebunan</p>
           </div>
         </div>
-        
+
         <div class="flex items-center justify-center" role="listitem" aria-labelledby="benefit-3">
           <div class="mr-4 text-3xl" aria-hidden="true">💰</div>
           <div>

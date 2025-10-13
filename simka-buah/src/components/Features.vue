@@ -5,7 +5,7 @@
         <h2 id="features-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Keunggulan SIMKA Buah Medan</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan buah segar terbaik dengan kualitas terjaga dan layanan pengiriman cepat ke seluruh wilayah Medan</p>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-1">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
@@ -16,7 +16,7 @@
           <h3 id="feature-1" class="text-xl font-bold text-gray-800 mb-2">Kualitas Terjaga</h3>
           <p class="text-gray-600">Buah segar langsung dari perkebunan terpilih dengan proses pengemasan higienis</p>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-2">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -26,7 +26,7 @@
           <h3 id="feature-2" class="text-xl font-bold text-gray-800 mb-2">Pengiriman Cepat</h3>
           <p class="text-gray-600">Diantar dalam 1-2 jam setelah order untuk wilayah Medan dan sekitarnya</p>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-3">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,7 +36,7 @@
           <h3 id="feature-3" class="text-xl font-bold text-gray-800 mb-2">Harga Terjangkau</h3>
           <p class="text-gray-600">Harga bersaing dengan kualitas buah segar terbaik langsung dari sumbernya</p>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-4">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@
           <h3 id="feature-4" class="text-xl font-bold text-gray-800 mb-2">Berbagai Pilihan</h3>
           <p class="text-gray-600">Berbagai jenis buah segar, buah musiman, serta paket buah campur tersedia</p>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-5">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,7 +56,7 @@
           <h3 id="feature-5" class="text-xl font-bold text-gray-800 mb-2">Pelayanan Ramah</h3>
           <p class="text-gray-600">Tim customer service kami siap membantu Anda 24/7 melalui WhatsApp</p>
         </div>
-        
+
         <div class="bg-green-50 p-6 rounded-xl shadow-md text-center hover:shadow-lg transition-shadow" role="article" aria-labelledby="feature-6">
           <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

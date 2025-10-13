@@ -1,14 +1,14 @@
 <template>
-  <a 
-    :href="whatsappLink" 
-    target="_blank" 
+  <a
+    :href="whatsappLink"
+    target="_blank"
     rel="noopener noreferrer"
     :class="buttonClass"
     @click="trackClick"
   >
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      class="h-5 w-5 inline mr-2" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-5 w-5 inline mr-2"
       viewBox="0 0 24 24"
       fill="currentColor"
     >

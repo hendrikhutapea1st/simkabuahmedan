@@ -5,18 +5,18 @@
         <h2 id="gallery-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery Buah Segar Kami</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">Beberapa contoh buah segar berkualitas yang kami sediakan untuk Anda</p>
       </div>
-      
+
       <div class="relative overflow-hidden py-8">
         <div class="carousel-wrapper">
           <div class="carousel-track" ref="carouselTrackRef">
             <!-- Set pertama gambar -->
-            <div 
-              v-for="(image, index) in images" 
+            <div
+              v-for="(image, index) in images"
               :key="'first-'+index"
               class="carousel-item overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow mx-2 flex-shrink-0 w-64"
             >
-              <img 
-                :src="image.src" 
+              <img
+                :src="image.src"
                 :alt="image.alt"
                 class="w-full h-64 object-cover"
                 loading="lazy"
@@ -27,13 +27,13 @@
               </div>
             </div>
             <!-- Duplikat set gambar untuk efek looping -->
-            <div 
-              v-for="(image, index) in images" 
+            <div
+              v-for="(image, index) in images"
               :key="'second-'+index"
               class="carousel-item overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow mx-2 flex-shrink-0 w-64"
             >
-              <img 
-                :src="image.src" 
+              <img
+                :src="image.src"
                 :alt="image.alt"
                 class="w-full h-64 object-cover"
                 loading="lazy"
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="text-center mt-12">
         <div class="inline-block">
           <WhatsAppButton
@@ -72,39 +72,39 @@ export default {
   },
   setup() {
     const images = [
-      { 
-        src: '/images/Photo 1_Up.png', 
-        alt: 'Semangka segar Medan, buah segar berkualitas tinggi', 
+      {
+        src: '/images/Photo 1_Up.png',
+        alt: 'Semangka segar Medan, buah segar berkualitas tinggi',
         title: 'Semangka Segar',
         description: 'Buah semangka segar langsung dari perkebunan'
       },
-      { 
-        src: '/images/Photo 2_UP.png', 
-        alt: 'Buah musiman Medan, berbagai jenis buah segar', 
+      {
+        src: '/images/Photo 2_UP.png',
+        alt: 'Buah musiman Medan, berbagai jenis buah segar',
         title: 'Buah Musiman',
         description: 'Berbagai jenis buah musiman berkualitas'
       },
-      { 
-        src: '/images/Photo 3_UP.png', 
-        alt: 'Buah organik Medan, buah tanpa bahan kimia', 
+      {
+        src: '/images/Photo 3_UP.png',
+        alt: 'Buah organik Medan, buah tanpa bahan kimia',
         title: 'Buah Organik',
         description: 'Buah-buahan organik tanpa bahan kimia'
       },
-      { 
-        src: '/images/Photo 4_UP.jpg', 
-        alt: 'Paket buah campur Medan, pilihan buah terbaik dalam satu paket', 
+      {
+        src: '/images/Photo 4_UP.jpg',
+        alt: 'Paket buah campur Medan, pilihan buah terbaik dalam satu paket',
         title: 'Paket Buah Campur',
         description: 'Pilihan buah campur terbaik dalam satu paket'
       },
-      { 
-        src: '/images/Photo 1_Up.png', 
-        alt: 'Buah lokal Medan segar dan manis', 
+      {
+        src: '/images/Photo 1_Up.png',
+        alt: 'Buah lokal Medan segar dan manis',
         title: 'Buah Lokal',
         description: 'Berbagai jenis buah lokal pilihan'
       },
-      { 
-        src: '/images/Photo 2_UP.png', 
-        alt: 'Salad buah segar Medan untuk kesehatan', 
+      {
+        src: '/images/Photo 2_UP.png',
+        alt: 'Salad buah segar Medan untuk kesehatan',
         title: 'Salad Buah',
         description: 'Salad buah segar untuk gaya hidup sehat'
       }
@@ -120,12 +120,12 @@ export default {
         position -= speed;
         // Menghitung lebar satu set gambar
         const singleSetWidth = carouselTrackRef.value.children[0].offsetWidth * images.length;
-        
+
         // Jika posisi melewati lebar satu set, reset ke awal untuk efek looping
         if (Math.abs(position) >= singleSetWidth) {
           position = 0;
         }
-        
+
         carouselTrackRef.value.style.transform = `translateX(${position}px)`;
       }
       animationFrameId = requestAnimationFrame(animateCarousel);
