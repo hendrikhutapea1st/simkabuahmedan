@@ -1,0 +1,48 @@
+# Security Headers
+<IfModule mod_headers.c>
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options nosniff
+    
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Enable XSS protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Strict transport security
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; object-src 'none';"
+    
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Feature policy
+    Header always set Feature-Policy "geolocation 'none'; microphone 'none'; camera 'none'"
+</IfModule>
+
+# Prevent access to sensitive files
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>
+
+# Protect against hotlinking
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(.+\.)?simkabuahfresh\.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|bmp|webp)$ - [F,NC,L]
+
+# Block common attack patterns
+RewriteCond %{QUERY_STRING} (base64_encode|cmd=|document.cookie|document.write|GLOBALS|_SESSION) [OR]
+RewriteCond %{REQUEST_URI} (\.\.//|%2e%2e%2f|%2e%2e%2f|~|\.\.\/|\.\/\.) [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} (libwww-perl|wget|python|nikto|curl|scan|java|perl|browsex|lwp|sqlmap) [NC,OR]
+RewriteCond %{HTTP_PROXY} !^$
+RewriteRule ^(.*)$ - [F,L]
+
+# Secure file uploads
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|conf)$">
+    Require all denied
+</FilesMatch>
