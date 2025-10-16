@@ -2,8 +2,8 @@
   <section id="testimoni" class="py-16 bg-white" aria-labelledby="testimoni-heading">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 id="testimoni-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimoni Pelanggan</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Apa kata pelanggan kami tentang kualitas buah dan layanan SIMKA Buah Medan</p>
+        <h2 id="testimoni-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimoni Pelanggan Buah Segar Medan</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Apa kata pelanggan kami tentang kualitas <strong>buah segar Medan</strong> dan layanan SIMKA Buah Medan</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list" aria-label="Kumpulan testimoni pelanggan">
@@ -29,7 +29,9 @@
           </div>
           <p id="testimonial-1" class="text-gray-700 italic mb-4">"Buahnya sangat segar dan manis! Pengiriman cepat, kurirnya ramah. Saya pesan semangka dan langsung habis karena rasanya enak sekali. Pokoknya SIMKA Buah mantap!"</p>
           <div class="flex items-center">
-            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-12" role="img" aria-label="Foto pelanggan Budi Santoso"></div>
+            <div class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold" role="img" aria-label="Foto pelanggan Budi Santoso">
+              BS
+            </div>
             <div class="ml-3">
               <h4 class="font-bold text-gray-800">Budi Santoso</h4>
               <p class="text-gray-600 text-sm">Medan</p>
@@ -59,7 +61,9 @@
           </div>
           <p id="testimonial-2" class="text-gray-700 italic mb-4">"Saya sering pesan buah di SIMKA Buah karena kualitasnya tidak diragukan lagi. Buahnya segar, harganya juga terjangkau. Recommended banget untuk yang suka konsumsi buah segar!"</p>
           <div class="flex items-center">
-            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-12" role="img" aria-label="Foto pelanggan Siti Rahayu"></div>
+            <div class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold" role="img" aria-label="Foto pelanggan Siti Rahayu">
+              SR
+            </div>
             <div class="ml-3">
               <h4 class="font-bold text-gray-800">Siti Rahayu</h4>
               <p class="text-gray-600 text-sm">Medan</p>
@@ -89,7 +93,9 @@
           </div>
           <p id="testimonial-3" class="text-gray-700 italic mb-4">"Pesan buah untuk acara keluarga, semua puas dengan kualitasnya. Buahnya segar, cantik-cantik, dan diantar tepat waktu. Layanan pelanggan juga sangat ramah. Akan langganan di sini!"</p>
           <div class="flex items-center">
-            <div class="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-12" role="img" aria-label="Foto pelanggan Agus Prasetyo"></div>
+            <div class="bg-gradient-to-br from-green-400 to-emerald-500 rounded-full w-12 h-12 flex items-center justify-center text-white font-bold" role="img" aria-label="Foto pelanggan Agus Prasetyo">
+              AP
+            </div>
             <div class="ml-3">
               <h4 class="font-bold text-gray-800">Agus Prasetyo</h4>
               <p class="text-gray-600 text-sm">Medan</p>

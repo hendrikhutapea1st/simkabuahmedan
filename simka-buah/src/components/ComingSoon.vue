@@ -39,6 +39,37 @@
         Mohon bersabar sementara kami meningkatkan kualitas layanan kami.
       </p>
 
+      <!-- Countdown Timer -->
+      <div v-if="countdown" class="mb-8 animate-fade-in-up">
+        <h3 class="text-xl md:text-2xl font-bold text-gray-700 dark:text-gray-200 mb-4">Perbaikan berakhir dalam:</h3>
+        <div class="flex justify-center space-x-3 md:space-x-4">
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-gray-700 rounded-lg shadow-lg flex items-center justify-center">
+              <span class="text-2xl md:text-3xl font-bold text-green-600">{{ countdown.days }}</span>
+            </div>
+            <span class="mt-2 text-sm text-gray-600 dark:text-gray-300">Hari</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-gray-700 rounded-lg shadow-lg flex items-center justify-center">
+              <span class="text-2xl md:text-3xl font-bold text-green-600">{{ countdown.hours }}</span>
+            </div>
+            <span class="mt-2 text-sm text-gray-600 dark:text-gray-300">Jam</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-gray-700 rounded-lg shadow-lg flex items-center justify-center">
+              <span class="text-2xl md:text-3xl font-bold text-green-600">{{ countdown.minutes }}</span>
+            </div>
+            <span class="mt-2 text-sm text-gray-600 dark:text-gray-300">Menit</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-gray-700 rounded-lg shadow-lg flex items-center justify-center">
+              <span class="text-2xl md:text-3xl font-bold text-green-600">{{ countdown.seconds }}</span>
+            </div>
+            <span class="mt-2 text-sm text-gray-600 dark:text-gray-300">Detik</span>
+          </div>
+        </div>
+      </div>
+
       <!-- Informasi Kontak -->
       <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700 animate-fade-in-up max-w-md mx-auto">
         <p class="text-gray-700 dark:text-gray-300 mb-4">Untuk informasi lebih lanjut:</p>
@@ -53,6 +84,90 @@
     </div>
   </div>
 </template>
+
+<script>
+import { ref, onMounted, onUnmounted, watch } from 'vue';
+
+export default {
+  name: 'ComingSoon',
+  props: {
+    startTime: {
+      type: Date,
+      required: true
+    },
+    endTime: {
+      type: Date,
+      required: true
+    }
+  },
+  setup(props) {
+    const countdown = ref(null);
+    let intervalId = null;
+    
+    // Initialize countdown
+    const initCountdown = () => {
+      updateCountdown();
+      intervalId = setInterval(updateCountdown, 1000);
+    };
+
+    // Calculate remaining time
+    const updateCountdown = () => {
+      const now = new Date();
+      const endTime = props.endTime;
+      const timeDiff = endTime - now;
+
+      if (timeDiff <= 0) {
+        // If the event has passed, clear the interval and show 0
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+        countdown.value = {
+          days: '00',
+          hours: '00',
+          minutes: '00',
+          seconds: '00'
+        };
+        return;
+      }
+
+      const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+      countdown.value = {
+        days: String(days).padStart(2, '0'),
+        hours: String(hours).padStart(2, '0'),
+        minutes: String(minutes).padStart(2, '0'),
+        seconds: String(seconds).padStart(2, '0')
+      };
+    };
+
+    onMounted(() => {
+      initCountdown();
+    });
+
+    onUnmounted(() => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    });
+
+    // Watch for prop changes to restart the countdown if needed
+    watch(() => props.endTime, () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+      initCountdown();
+    });
+
+    return {
+      countdown
+    };
+  }
+};
+</script>
 
 <style scoped>
 /* Tambahkan animasi kontemporer */

@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 class="text-xl font-bold text-green-400 mb-4">SIMKA BUAH MEDAN</h3>
-          <p class="text-gray-300">Menyediakan berbagai jenis buah segar. Segar, berkualitas, dan dikemas dengan higienis untuk menjaga nutrisi dan rasa.<strong>buah - sayur - salad buah segar</strong></p>
+          <p class="text-gray-300">Menyediakan berbagai jenis buah segar. Segar, berkualitas, dan dikemas dengan higienis untuk menjaga nutrisi dan rasa.<strong> Buah - sayur - salad buah segar</strong></p>
           <div class="mt-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.1575017827604!2d98.6518839!3d3.5511431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fe8b5a38691%3A0xde6455fc70b22916!2sSimka%20Buah%20Medan!5e0!3m2!1sid!2sid!4v1760169629647!5m2!1sid!2sid"

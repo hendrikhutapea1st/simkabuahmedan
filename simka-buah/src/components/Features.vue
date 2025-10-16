@@ -2,8 +2,8 @@
   <section id="features" class="py-16 bg-white" aria-labelledby="features-heading">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 id="features-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Keunggulan SIMKA Buah Medan</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan buah segar terbaik dengan kualitas terjaga dan layanan pengiriman cepat ke seluruh wilayah Medan</p>
+        <h2 id="features-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Keunggulan Buah Segar Medan dari SIMKA</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan <strong>buah segar Medan</strong> terbaik dengan kualitas terjaga dan layanan pengiriman cepat ke seluruh wilayah Medan</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

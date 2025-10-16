@@ -29,11 +29,11 @@ export default {
     },
     message: {
       type: String,
-      default: 'Halo, saya ingin memesan buah segar Medan'
+      default: 'Halo SIMKA Buah! Saya tertarik dengan buah segar Medan berkualitas. Mohon bantuannya untuk pesan buah segar terbaik yang tersedia saat ini.'
     },
     buttonText: {
       type: String,
-      default: 'Pesan Sekarang'
+      default: 'Pesan Via Admin 1'
     },
     buttonClass: {
       type: String,
@@ -42,8 +42,25 @@ export default {
   },
   computed: {
     whatsappLink() {
-      const encodedMessage = encodeURIComponent(this.message);
-      return `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`;
+      // Sanitize phone number - remove any non-digit characters except +
+      const cleanedPhone = this.phoneNumber.replace(/[^0-9+]/g, '');
+      
+      // Validate phone number format - minimum 10 digits, maximum 15, starts with + or number
+      if (!/^(\+?[1-9]\d{7,14})$/.test(cleanedPhone)) {
+        console.warn('Invalid phone number format');
+        return '#'; // Return safe fallback
+      }
+      
+      // Sanitize message - encode special characters
+      const sanitizedMessage = this.message
+        .replace(/[\u0080-\uFFFF]/g, encodeURIComponent) // Encode non-ASCII
+        .replace(/[<>'"&]/g, (match) => {
+          // HTML entity encoding for security
+          const entities = { '<': '%3C', '>': '%3E', '"': '%22', "'": '%27', '&': '%26' };
+          return entities[match];
+        });
+      
+      return `https://wa.me/${cleanedPhone}?text=${encodeURIComponent(sanitizedMessage)}`;
     }
   },
   methods: {

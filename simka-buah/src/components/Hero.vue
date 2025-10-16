@@ -6,14 +6,20 @@
           SIMKA Buah <span class="text-green-600">Medan</span> <br><span class="typewriter-text">{{ currentText }}<span class="cursor">|</span></span>
         </h1>
         <p class="text-lg text-gray-600 mb-8 max-w-lg text-justify animate-fade-in-up animate-duration-300 animate-delay-200">
-          Menyediakan berbagai jenis buah - sayur segar, salad buah, parcel buah, herbal. Berkualitas dan dikemas dengan higienis untuk menjaga nutrisi dan rasa. Dapat dipesan secara online dan siap diantar ke lokasi Anda di Medan dan sekitarnya.
+          Menyediakan berbagai jenis <strong>buah segar Medan</strong>, buah organik Medan, dan buah lokal Medan terbaik. Berkualitas dan dikemas dengan higienis untuk menjaga nutrisi dan rasa. Dapat dipesan secara online dan siap diantar ke lokasi Anda di Medan dan sekitarnya.
         </p>
         <div class="flex flex-col sm:flex-row gap-2 animate-fade-in-up animate-duration-300 animate-delay-300" role="group" aria-label="Tautan pemesanan">
           <WhatsAppButton
             :phone-number="'6281262662497'"
             :message="'Halo SIMKA Buah! Saya tertarik dengan buah segar Medan berkualitas. Mohon bantuannya untuk pesan buah segar terbaik yang tersedia saat ini.'"
-            button-text="Pesan Buah Segar Medan via WhatsApp"
+            button-text="Pesan Via Admin 1"
             button-class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-full shadow-lg transition duration-300 text-center flex items-center animate-bounce animate-duration-500 animate-delay-400"
+          />
+          <WhatsAppButton
+            :phone-number="'6289508284808'"
+            :message="'Halo SIMKA Buah! Saya tertarik dengan buah segar Medan berkualitas. Mohon bantuannya untuk pesan buah segar terbaik yang tersedia saat ini.'"
+            button-text="Pesan Via Admin 2"
+            button-class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-4 rounded-full shadow-lg transition duration-300 text-center flex items-center animate-bounce animate-duration-500 animate-delay-500"
           />
           <a
             href="https://gofood.co.id/medan/restaurant/simka-fresh-pajak-cempaka-jl-cempaka-6a22dc19-3fcd-4025-900a-6fc76cbf8fb7"
@@ -40,7 +46,7 @@
             GRABMART
           </a>
           <a
-            href="https://shopee.co.id/Semangka-non-biji-1-buah-3kg-4kg-khusus-medan-i.82706026.4033514681"
+            href="https://id.shp.ee/BRm3M58"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded-full shadow-lg transition duration-300 text-center flex items-center animate-bounce animate-duration-500 animate-delay-700"

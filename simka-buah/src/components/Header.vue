@@ -2,10 +2,12 @@
   <header class="bg-white shadow-sm animate-slide-in-down" role="banner">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <div class="flex items-center animate-fade-in-left">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600 mr-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm0 8.625a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25zM15.375 12a1.125 1.125 0 11-2.25 0 1.125 1.125 0 012.25 0zM7.5 10.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" clip-rule="evenodd" />
-        </svg>
-        <h1 class="text-xl font-bold text-green-600">SIMKA Buah Medan</h1>
+        <img 
+          src="/images/Simka Buah Medan_UP.jpg" 
+          alt="Logo SIMKA Buah Medan" 
+          class="h-12 w-12 rounded-full object-cover mr-3 border-2 border-green-200 shadow-sm"
+        />
+        <h1 class="text-xl font-bold text-green-600 hidden sm:block">SIMKA Buah Medan</h1>
       </div>
 
       <!-- Mobile menu button -->

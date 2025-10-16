@@ -2,8 +2,8 @@
   <section id="gallery" class="py-16 bg-gray-50" aria-labelledby="gallery-heading">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 id="gallery-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery Buah Segar Kami</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Beberapa contoh buah segar berkualitas yang kami sediakan untuk Anda</p>
+        <h2 id="gallery-heading" class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Gallery Buah Segar Medan Terbaik</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Beberapa contoh <strong>buah segar Medan</strong> berkualitas yang kami sediakan untuk Anda</p>
       </div>
 
       <div class="relative overflow-hidden py-8">
@@ -46,17 +46,6 @@
           </div>
         </div>
       </div>
-
-      <div class="text-center mt-12">
-        <div class="inline-block">
-          <WhatsAppButton
-            :phone-number="'6281262662497'"
-            :message="'Halo SIMKA Buah! Saya tertarik dengan berbagai jenis buah segar yang tersedia. Bisa bantu rekomendasikan buah terbaik hari ini?'"
-            button-text="Lihat Katalog Lengkap"
-            button-class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300"
-          />
-        </div>
-      </div>
     </div>
   </section>
 </template>
@@ -73,40 +62,52 @@ export default {
   setup() {
     const images = [
       {
-        src: '/images/Photo 1_Up.png',
-        alt: 'Semangka segar Medan, buah segar berkualitas tinggi',
-        title: 'Semangka Segar',
-        description: 'Buah semangka segar langsung dari perkebunan'
+        src: '/images/Apel Fuji.png',
+        alt: '',
+        title: 'Apel Fuji Premium',
+        description: 'Kualitas premium dan kesegaran terjamin, siap untuk Anda nikmati'
       },
       {
         src: '/images/Photo 2_UP.png',
-        alt: 'Buah musiman Medan, berbagai jenis buah segar',
-        title: 'Buah Musiman',
-        description: 'Berbagai jenis buah musiman berkualitas'
+        alt: '',
+        title: 'Parcel Buah Segar',
+        description: 'Berbagai jenis buah lokal pilihan dan satu paket praktis'
       },
       {
-        src: '/images/Photo 3_UP.png',
-        alt: 'Buah organik Medan, buah tanpa bahan kimia',
-        title: 'Buah Organik',
-        description: 'Buah-buahan organik tanpa bahan kimia'
+        src: '/images/Apel Hijau_UP.jpg',
+        alt: '',
+        title: 'Apel Hijau Segar',
+        description: 'Kesegaran alami dalam setiap gigitan. Nikmati renyahnya apel hijau pilihan kami.'
       },
       {
-        src: '/images/Photo 4_UP.jpg',
-        alt: 'Paket buah campur Medan, pilihan buah terbaik dalam satu paket',
-        title: 'Paket Buah Campur',
-        description: 'Pilihan buah campur terbaik dalam satu paket'
+        src: '/images/Apel Merah_UP.jpg',
+        alt: '',
+        title: 'Apel Merah Premium',
+        description: 'Pilihan terbaik untuk kesegaran dan rasa manis yang sempurna'
       },
       {
-        src: '/images/Photo 1_Up.png',
-        alt: 'Buah lokal Medan segar dan manis',
-        title: 'Buah Lokal',
-        description: 'Berbagai jenis buah lokal pilihan'
+        src: '/images/Pepaya_UP.jpg',
+        alt: '',
+        title: 'Pepaya Segar & Manis',
+        description: 'Manisnya tropis, kaya vitamin. Nikmati pepaya matang pilihan kami'
       },
       {
-        src: '/images/Photo 2_UP.png',
-        alt: 'Salad buah segar Medan untuk kesehatan',
-        title: 'Salad Buah',
-        description: 'Salad buah segar untuk gaya hidup sehat'
+        src: '/images/Jeruk Medan_UP.png',
+        alt: '',
+        title: 'Jeruk Medan Juicy',
+        description: 'Nikmati kesegaran dan rasa manis asam dari jeruk Medan'
+      },
+      {
+        src: '/images/Mangga Harum Manis_UP.png',
+        alt: '',
+        title: 'Mangga Harum Manis Matang Sempurna',
+        description: 'Nikmati kelezatan mangga pilihan, siap memanjakan lidah Anda'
+      },
+      {
+        src: '/images/Buah Potong_UP.webp',
+        alt: '',
+        title: 'Buah Potong Tropis Segar',
+        description: 'Kombinasi buah naga, pepaya, dan jeruk yang manis dan menyegarkan. Pilihan sehat untuk setiap saat'
       }
     ];
 

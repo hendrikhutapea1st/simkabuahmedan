@@ -30,12 +30,16 @@ export default {
     // Daftar gambar untuk slider
     const images = [
       {
-        src: '/images/Photo 1_Up.png',
+        src: '/images/Photo 2_UP.png',
+        alt: 'Buah musiman Medan segar'
+      },
+      {
+        src: '/images/Apel Merah_UP.jpg',
         alt: 'Buah segar Medan berkualitas'
       },
       {
-        src: '/images/Photo 2_UP.png',
-        alt: 'Buah musiman Medan segar'
+        src: '/images/Photo 1_Up.png',
+        alt: 'Buah segar Medan berkualitas'
       },
       {
         src: '/images/Photo 3_UP.png',
