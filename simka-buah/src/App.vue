@@ -16,7 +16,7 @@ import FloatingButtons from './components/FloatingButtons.vue'
 
 // Default dates (October 15, 2025, 19:00 - 19:49 same day)
 const defaultStartTime = new Date('2025-10-16T13:00:00+07:00');
-const defaultEndTime = new Date('2025-10-16T13:20:00+07:00');
+const defaultEndTime = new Date('2029-10-16T13:20:00+07:00');
 
 // You can also get these values from localStorage or environment variables for configuration
 const storedStartTime = localStorage.getItem('comingSoonStartTime');
