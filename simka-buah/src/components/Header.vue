@@ -5,9 +5,9 @@
         <img 
           src="/images/Simka Buah Medan_UP.jpg" 
           alt="Logo SIMKA Buah Medan" 
-          class="h-12 w-12 rounded-full object-cover mr-3 border-2 border-green-200 shadow-sm"
+          class="h-10 w-10 rounded-full object-cover mr-2 sm:mr-3 border-2 border-green-200 shadow-sm"
         />
-        <h1 class="text-xl font-bold text-green-600 hidden sm:block">SIMKA Buah Medan</h1>
+        <h1 class="text-lg sm:text-xl font-bold text-green-600">SIMKA Buah Medan</h1>
       </div>
 
       <!-- Mobile menu button -->
@@ -53,12 +53,12 @@
       </button>
 
       <!-- Desktop navigation -->
-      <nav class="hidden md:flex space-x-8 animate-fade-in-right" role="navigation" aria-label="Navigasi utama">
-        <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Beranda</a>
-        <a href="#features" class="text-gray-700 hover:text-green-600 font-medium">Keunggulan</a>
-        <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium">Galeri</a>
-        <a href="#testimoni" class="text-gray-700 hover:text-green-600 font-medium">Testimoni</a>
-        <a href="#cta" class="text-gray-700 hover:text-green-600 font-medium">Hubungi</a>
+      <nav class="hidden md:flex space-x-4 lg:space-x-6 xl:space-x-8 animate-fade-in-right" role="navigation" aria-label="Navigasi utama">
+        <a href="#home" class="text-gray-700 hover:text-green-600 font-medium text-sm sm:text-base">Beranda</a>
+        <a href="#features" class="text-gray-700 hover:text-green-600 font-medium text-sm sm:text-base">Keunggulan</a>
+        <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium text-sm sm:text-base">Galeri</a>
+        <a href="#testimoni" class="text-gray-700 hover:text-green-600 font-medium text-sm sm:text-base">Testimoni</a>
+        <a href="#cta" class="text-gray-700 hover:text-green-600 font-medium text-sm sm:text-base">Hubungi</a>
       </nav>
     </div>
 
@@ -71,11 +71,11 @@
       aria-label="Menu navigasi mobile"
     >
       <div class="flex flex-col space-y-3">
-        <a href="#home" class="text-gray-700 hover:text-green-600 font-medium py-2">Beranda</a>
-        <a href="#features" class="text-gray-700 hover:text-green-600 font-medium py-2">Keunggulan</a>
-        <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium py-2">Galeri</a>
-        <a href="#testimoni" class="text-gray-700 hover:text-green-600 font-medium py-2">Testimoni</a>
-        <a href="#cta" class="text-gray-700 hover:text-green-600 font-medium py-2">Hubungi</a>
+        <a href="#home" class="text-gray-700 hover:text-green-600 font-medium py-2 text-base">Beranda</a>
+        <a href="#features" class="text-gray-700 hover:text-green-600 font-medium py-2 text-base">Keunggulan</a>
+        <a href="#gallery" class="text-gray-700 hover:text-green-600 font-medium py-2 text-base">Galeri</a>
+        <a href="#testimoni" class="text-gray-700 hover:text-green-600 font-medium py-2 text-base">Testimoni</a>
+        <a href="#cta" class="text-gray-700 hover:text-green-600 font-medium py-2 text-base">Hubungi</a>
       </div>
     </div>
   </header>
